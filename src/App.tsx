@@ -1,11 +1,11 @@
-import React, { memo } from "react";
+import React, { FC, memo } from "react";
 
 import styles from "./style.module.scss";
 
 import background from "./example-img.jpg";
 import Typography from "@/components/Typography";
 
-const App = (props: any) => {
+const App: FC = (props) => {
   return (
     <div className={styles.App}>
       <h1 className="red">Beginning my react create App</h1>
