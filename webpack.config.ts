@@ -40,12 +40,8 @@ const config: Configuration = {
       chunkFilename: isDev ? "[id].css" : "[id].[hash].css"
     })
   ],
-  devServer: {
-    publicPath: "/",
-    port: PORT,
-    hot: isDev
-  },
-  devtool: isDev ? "source-map" : "",
+
+  devtool: isDev ? "source-map" : "eval-source-map",
   module: {
     rules: [
       {
@@ -110,6 +106,13 @@ const config: Configuration = {
       "@": path.resolve(__dirname, "./src")
     }
   },
+
+  devServer: {
+    publicPath: "/",
+    port: PORT,
+    hot: isDev
+  },
+
   output: {
     path: path.resolve(__dirname, "build"),
     filename: "bundle.js"
