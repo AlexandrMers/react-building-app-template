@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/App.tsx не передали свойств -> snapshot 1`] = `
+<div
+  class="App"
+>
+  <h1
+    class="red"
+  >
+    React App with custom webpack config
+  </h1>
+  <img
+    alt="horses"
+    src="[object Object]"
+  />
+  <h1>
+    Helloo))
+  </h1>
+</div>
+`;
